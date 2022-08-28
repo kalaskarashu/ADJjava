@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        button{
+            background-color: black;
+            color: greenyellow;
+            box-shadow: 2px 2px 5px green;
+            border: 1px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: width;
+            transition-duration: 5s;
+        }
+        button:hover,a:hover {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+
+        <form action="LoginServlet" method="get">
+            <fieldset>
+                <legend align="center">Login</legend>
+                Username: <input type="text" name="uname" id=""> <br><br>
+                Password: <input type="password" name="Pass" id="">
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset">
+                <a href="register.html"><button type="button">REGISTER</button></a>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
